@@ -516,10 +516,14 @@
         </div>
 
         <!-- Static hosting: the form composes an email in the visitor's mail app (js/main.js).
-             The action attribute is the browser's own mailto fallback when JavaScript is off. -->
-        <form id="enquiry" class="enquiry" action="mailto:nikhilmodi9638@gmail.com?subject=Project%20enquiry" method="post" enctype="text/plain">
+             Without JavaScript the submit button is hidden and the visitor is pointed to the email address. -->
+        <form id="enquiry" class="enquiry">
           <h3>Project enquiry</h3>
           <p class="form-note">This form prepares an email in your mail app, and you send it from there. Fields are required unless marked optional.</p>
+          <noscript>
+            <style>.enquiry-submit { display: none; }</style>
+            <p class="form-note">This form needs JavaScript. Please email your enquiry to <a href="mailto:nikhilmodi9638@gmail.com?subject=Project%20enquiry">nikhilmodi9638@gmail.com</a> instead.</p>
+          </noscript>
 
           <div class="form-grid">
             <div class="field">
