@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikhil9638.github.io/nikhil-commercial-portfolio/sitemap.xml
